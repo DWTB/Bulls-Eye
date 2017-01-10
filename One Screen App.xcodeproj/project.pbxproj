@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5362D7C1E253C530031D0F7 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5362D7B1E253C530031D0F7 /* AboutViewController.swift */; };
 		E5A21E411E201074008E6985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A21E401E201074008E6985 /* AppDelegate.swift */; };
 		E5A21E431E201074008E6985 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A21E421E201074008E6985 /* ViewController.swift */; };
 		E5A21E461E201074008E6985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A21E441E201074008E6985 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		E5A21E4B1E201074008E6985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A21E491E201074008E6985 /* LaunchScreen.storyboard */; };
 		E5A21E561E201074008E6985 /* One_Screen_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A21E551E201074008E6985 /* One_Screen_AppTests.swift */; };
 		E5A21E611E201074008E6985 /* One_Screen_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A21E601E201074008E6985 /* One_Screen_AppUITests.swift */; };
+		E5EB26A41E25477B007B50F3 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = E5EB26A31E25477B007B50F3 /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E5362D7B1E253C530031D0F7 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		E5A21E3D1E201074008E6985 /* One Screen App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Screen App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A21E401E201074008E6985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5A21E421E201074008E6985 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		E5A21E5C1E201074008E6985 /* One Screen AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "One Screen AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A21E601E201074008E6985 /* One_Screen_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = One_Screen_AppUITests.swift; sourceTree = "<group>"; };
 		E5A21E621E201074008E6985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5EB26A31E25477B007B50F3 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = BullsEye.html; path = "../../The iOS Apprentice 1 - Getting Started/Resources/BullsEye.html"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		E5A21E3F1E201074008E6985 /* One Screen App */ = {
 			isa = PBXGroup;
 			children = (
+				E5EB26A31E25477B007B50F3 /* BullsEye.html */,
 				E5A21E401E201074008E6985 /* AppDelegate.swift */,
 				E5A21E421E201074008E6985 /* ViewController.swift */,
+				E5362D7B1E253C530031D0F7 /* AboutViewController.swift */,
 				E5A21E441E201074008E6985 /* Main.storyboard */,
 				E5A21E471E201074008E6985 /* Assets.xcassets */,
 				E5A21E491E201074008E6985 /* LaunchScreen.storyboard */,
@@ -233,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5A21E4B1E201074008E6985 /* LaunchScreen.storyboard in Resources */,
+				E5EB26A41E25477B007B50F3 /* BullsEye.html in Resources */,
 				E5A21E481E201074008E6985 /* Assets.xcassets in Resources */,
 				E5A21E461E201074008E6985 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5362D7C1E253C530031D0F7 /* AboutViewController.swift in Sources */,
 				E5A21E431E201074008E6985 /* ViewController.swift in Sources */,
 				E5A21E411E201074008E6985 /* AppDelegate.swift in Sources */,
 			);
@@ -412,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "One Screen App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "RD.One-Screen-App";
@@ -425,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "One Screen App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "RD.One-Screen-App";
@@ -507,6 +517,7 @@
 				E5A21E671E201074008E6985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5A21E681E201074008E6985 /* Build configuration list for PBXNativeTarget "One Screen AppTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +526,7 @@
 				E5A21E6A1E201074008E6985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5A21E6B1E201074008E6985 /* Build configuration list for PBXNativeTarget "One Screen AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +535,7 @@
 				E5A21E6D1E201074008E6985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
