@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var roundLabel: UILabel!
     
-    //Declarations
+    //Declarations (I wanted all of them to be instance vars)
     var currentValue: Int = 0
     var targetValue: Int = 0
     var round: Int = 0
@@ -31,25 +31,24 @@ class ViewController: UIViewController {
         //Setup Slider
         let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
         slider.setThumbImage(thumbImageNormal, for: .normal)
+        
         let thumbImageHighlighted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
         slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
+        
         let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
         let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
         let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets: insets)
         slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
+        
         let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
         let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
         slider.setMaximumTrackImage(trackRightResizable, for: .normal)
-        
-        
-        
         
         startNewRound()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     //New round
@@ -68,9 +67,7 @@ class ViewController: UIViewController {
         startNewRound()
     }
     
-    
     //Update Labels
-    
     func updateLabels(){
         targetLabel.text = String(targetValue)
         scoreLabel.text = String(score)
@@ -79,11 +76,11 @@ class ViewController: UIViewController {
     
     //Handeling alerts
     @IBAction func showAlert() {
-        difference = Int(abs(targetValue-currentValue))
-        points = 100 - difference
+        difference = Int(abs(targetValue-currentValue)) //Calculates the difference
+        points = 100 - difference                       //Calculates the initial points
         
         
-        
+        //Sets the title
         let title: String
         if difference == 0 {
             title = "Perfect!"
@@ -99,8 +96,10 @@ class ViewController: UIViewController {
             title = "Not even close"
         }
         
+        //Calculates the score
         score += points
         
+        //Alert Stuff
         let message = "You scored \(points) points"
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -114,7 +113,6 @@ class ViewController: UIViewController {
     }
     
     //Handeling the value of the slider
-    
     @IBAction func sliderMoved(_ slider: UISlider){
         currentValue = lroundf(slider.value)
     }
