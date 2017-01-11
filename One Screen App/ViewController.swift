@@ -93,7 +93,7 @@ class ViewController: UIViewController {
         } else if difference < 10 {
             title = "Pretty close"
         } else {
-            title = "Not even close"
+            title = "Not even close!!!"
         }
         
         //Calculates the score
